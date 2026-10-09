@@ -1,0 +1,24 @@
+:root { font-family: system-ui, sans-serif; color: #1b1b1b; background: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; padding: .55rem .8rem; }
+button:disabled { cursor: wait; opacity: .65; }
+.shell { max-width: 1000px; margin: 0 auto; padding: 1.25rem; }
+.topbar { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem; }
+.brand { color: inherit; font-weight: 700; text-decoration: none; font-size: 1.3rem; }
+nav, .account-actions { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; }
+.account-actions { margin-left: auto; }
+.link-button { border: 0; background: transparent; padding: .4rem; }
+section { padding: 1.5rem 0; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; max-width: 700px; }
+label { display: grid; gap: .35rem; }
+input, textarea, select { width: 100%; padding: .6rem; border: 1px solid #aaa; border-radius: 4px; }
+textarea { min-height: 5rem; resize: vertical; }
+.wide { grid-column: 1 / -1; }
+.records { list-style: none; padding: 0; }
+.records li, .creator { border: 1px solid #ddd; border-radius: 6px; padding: 1rem; margin: 1rem 0; }
+.message { padding: .75rem; background: #eef6ee; }
+.error { background: #fff0f0; color: #8b1111; }
+code { overflow-wrap: anywhere; }
+@media (max-width: 650px) { .form-grid { grid-template-columns: 1fr; } .wide { grid-column: auto; } .account-actions { margin-left: 0; } }
